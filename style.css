@@ -302,3 +302,107 @@ p.text_about {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    h1 {
+        margin-left: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    h2.name_h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    h3.Biografic_resum {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .name {
+        font-size: 13px;
+        padding: 10px;
+    }
+    section#skills,
+    section#projects,
+    section#about {
+        padding: 30px 0;
+        min-height: 100vh;
+        height: auto;
+        scroll-snap-align: start;   
+    }
+    .skills-container,
+    .project-container,
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .skill,
+    .project {
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+        padding: 30px 10px;
+        margin: 10px 0;
+    }
+    .skill img {
+        max-width: 120px;
+    }
+    .stars img {
+        width: 18px;
+        height: 18px;
+    }
+    h2.name_h2,
+    section#skills h2,
+    section#projects h2,
+    section#about h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    p.text_skills,
+    p.text_projects,
+    p.text_about {
+        font-size: 13px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+    .project h3.subtitle_projects {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 16px;
+    }
+    .skill img {
+        max-width: 90px;
+    }
+    .skill, .project {
+        max-width: 95vw;
+        padding: 18px 5px;
+    }
+}
